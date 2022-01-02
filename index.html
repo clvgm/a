@@ -36,7 +36,7 @@
 			max-width: 75ch;
 			width: 100%;
 			min-height: 90vh;
-			font-size: calc(1vmin + 11px);
+			font-size: calc(1vmin + 9px);
 			text-align: justify;
 		}
 
@@ -234,18 +234,20 @@
 			flex-grow: 1;
 			text-align: center;
 		}
-		hr{
+
+		hr {
 			border: solid 1px #333;
 			background: #333;
 			color: #333;
 		}
+
 		.mb {
 			padding-block: 0.3em;
 			overflow-x: auto;
 		}
 
 		.svgimg {
-			width: max(100%, 50vmin);
+			width: max(60%, 50vmin);
 			height: auto;
 			display: flex;
 			margin-inline: auto;
@@ -539,17 +541,164 @@
 				</div>
 				<div class="qc">
 					<div id="NC10-MAT21-20220101-S01-Q09" class="qh">#NC10-MAT21-20220101-S01-Q09</div>
-					<div class="q">Find the area of the shaded region where ABCD is a Square of side $14cm$.</div>
+					<div class="q">Find the area of the shaded region (in green) where ABCD is a Square of side $14cm$.
+						<div class="svgimg">
+							<svg version="1.1" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+								<defs>
+									<marker id="b" overflow="visible" orient="auto">
+										<path transform="scale(.6) rotate(180) translate(0)"
+											d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z"
+											fill="#ccc" fill-rule="evenodd" stroke="context-stroke" stroke-linejoin="round"
+											stroke-width=".625" />
+									</marker>
+									<marker id="a" overflow="visible" orient="auto">
+										<path transform="scale(.6) translate(0)"
+											d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z"
+											fill="#ccc" fill-rule="evenodd" stroke="context-stroke" stroke-linejoin="round"
+											stroke-width=".625" />
+									</marker>
+								</defs>
+								<g stroke="#4d7154">
+									<rect x="162.51" y="162.47" width="754.98" height="754.98" fill="#cfa" stroke-width="4.9671" />
+									<g fill="#ff8080" stroke-linecap="square" stroke-width="4.9347">
+										<circle cx="353" cy="352.96" r="186.51" style="paint-order:markers fill stroke" />
+										<circle cx="729" cy="352.96" r="186.51" style="paint-order:markers fill stroke" />
+										<circle cx="729" cy="726.95" r="186.51" style="paint-order:markers fill stroke" />
+										<circle cx="353" cy="726.95" r="186.51" style="paint-order:markers fill stroke" />
+									</g>
+								</g>
+								<path d="m162.51 119.43h754.98" fill="none" marker-end="url(#b)" marker-start="url(#a)" stroke="#ccc"
+									stroke-width="8" />
+								<text x="472.74683" y="96.389107" fill="#000000" font-family="sans-serif" font-size="53.333px"
+									style="line-height:1.25" xml:space="preserve">
+									<tspan x="472.74683" y="96.389107" fill="#cccccc" font-family="'Noto Serif'" font-size="53.333px"
+										font-style="italic">14cm</tspan>
+								</text>
+								<text x="812.67743" y="1051.6664" fill="#cccccc" font-family="sans-serif" font-size="40px"
+									style="line-height:1.25" xml:space="preserve">
+									<tspan x="812.67743" y="1051.6664" fill="#cccccc" font-family="'Noto Sans Mono'" font-size="40px">
+										#nuravLabs</tspan>
+								</text>
+							</svg>
+						</div>
+					</div>
 					<div class="a">
-						As 14 is the side of the outer square, and as there are two circles within the square,
-						$14 = 2\times d$
+						As $14cm$ is the side of the outer square, and as there are two circles within the square,
 						<div class="mb">
 							$$
-								\begin{align}
-									Area(Shaded) &= Area(Square) - Area(All Circles)\\
-									Area(Shaded) &= Area(Square) - \left(4\times Area(Circle)\right)\\
-									Area(Shaded) &= (s^2) - \left(4\times \pi r^2\right)\\
-								\end{align}
+							\begin{align}
+							2\times d &= 14\\
+							d&= \dfrac{14}{2}\\
+							\require{cancel}d&= \dfrac{\cancelto{7}{14}}{\cancelto{1}{2}}\\
+							d&= \dfrac{7}{1}\\
+							\therefore d&= 7\text{ cm}
+							\end{align}
+							$$</div>
+						<hr>
+						Hence the radius of the circles will be,
+						<div class="mb">
+							$$
+							\begin{align}
+							r &= \dfrac{d}{2}\\
+							r &= \dfrac{7}{2}\text{ cm}
+							\end{align}
+							$$
+						</div>
+						<div class="svgimg">
+							<svg version="1.1" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+								<defs>
+									<marker id="bc" overflow="visible" orient="auto">
+										<path transform="scale(.2)" d="m0-7.0711-7.0711 7.0711 7.0711 7.0711 7.071-7.0711-7.071-7.0711z"
+											fill="#333" fill-rule="evenodd" stroke="context-stroke" stroke-width="1pt" />
+									</marker>
+									<marker id="ba" overflow="visible" orient="auto">
+										<path transform="scale(.6) rotate(180) translate(0)"
+											d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z"
+											fill="#333" fill-rule="evenodd" stroke="context-stroke" stroke-linejoin="round"
+											stroke-width=".625" />
+									</marker>
+									<marker id="bb" overflow="visible" orient="auto">
+										<path transform="scale(.6) translate(0)"
+											d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z"
+											fill="#333" fill-rule="evenodd" stroke="context-stroke" stroke-linejoin="round"
+											stroke-width=".625" />
+									</marker>
+								</defs>
+								<g stroke="#4d7154">
+									<rect x="162.51" y="162.47" width="754.98" height="754.98" fill="#cfa" stroke-width="4.9671" />
+									<g fill="#ff8080" stroke-linecap="square" stroke-width="4.9347">
+										<circle cx="353" cy="352.96" r="186.51" style="paint-order:markers fill stroke" />
+										<circle cx="729" cy="352.96" r="186.51" style="paint-order:markers fill stroke" />
+										<circle cx="729" cy="726.95" r="186.51" style="paint-order:markers fill stroke" />
+										<circle cx="353" cy="726.95" r="186.51" style="paint-order:markers fill stroke" />
+									</g>
+								</g>
+								<text x="812.67743" y="1051.6664" fill="#cccccc" font-family="sans-serif" font-size="40px"
+									style="line-height:1.25" xml:space="preserve">
+									<tspan x="812.67743" y="1051.6664" fill="#333" font-family="'Noto Sans Mono'" font-size="40px">
+										#nuravLabs</tspan>
+								</text>
+								<g>
+									<path d="m162.51 119.43h754.98" marker-end="url(#ba)" marker-start="url(#bb)" stroke="#333"
+										stroke-width="8" />
+									<text x="472.74683" y="96.389107" fill="#333" font-family="sans-serif" font-size="53.333px"
+										style="line-height:1.25" xml:space="preserve">
+										<tspan x="472.74683" y="96.389107" fill="#333" font-family="'Noto Serif'" font-size="53.333px"
+											font-style="italic">14cm</tspan>
+									</text>
+								</g>
+								<g>
+									<path d="m960.57 162.51v754.98" marker-end="url(#ba)" marker-start="url(#bb)" stroke="#333"
+										stroke-width="8" />
+									<text transform="rotate(90)" x="472.74683" y="-983.6109" fill="#333" font-family="sans-serif"
+										font-size="53.333px" style="line-height:1.25" xml:space="preserve">
+										<tspan x="472.74683" y="-983.6109" fill="#333" font-family="'Noto Serif'" font-size="53.333px"
+											font-style="italic">14cm</tspan>
+									</text>
+									<path d="m178.51 351.43h349.76" marker-end="url(#ba)" marker-start="url(#bb)" stroke="#333"
+										stroke-width="8" />
+									<text x="270.56467" y="334.3891" fill="#333" font-family="sans-serif" font-size="53.333px"
+										style="line-height:1.25" xml:space="preserve">
+										<tspan x="270.56467" y="334.3891" fill="#333" font-family="'Noto Serif'" font-size="53.333px"
+											font-style="italic">d=7cm</tspan>
+									</text>
+									<path d="m364.2 731.43h165.55" marker-end="url(#ba)" marker-start="url(#bc)" stroke="#333"
+										stroke-width="8" />
+									<text x="279.78519" y="714.3891" fill="#333" font-family="sans-serif" font-size="53.333px"
+										style="line-height:1.25" xml:space="preserve">
+										<tspan x="279.78519" y="714.3891" fill="#333" font-family="'Noto Serif'" font-size="53.333px"
+											font-style="italic">r=3.5cm</tspan>
+									</text>
+									<path d="m558.51 351.43h349.76" marker-end="url(#ba)" marker-start="url(#bb)" stroke="#333"
+										stroke-width="8" />
+									<text x="650.5647" y="334.3891" fill="#333" font-family="sans-serif" font-size="53.333px"
+										style="line-height:1.25" xml:space="preserve">
+										<tspan x="650.5647" y="334.3891" fill="#333" font-family="'Noto Serif'" font-size="53.333px"
+											font-style="italic">d=7cm</tspan>
+									</text>
+								</g>
+							</svg>
+						</div>
+						<div class="mb">
+							$$
+							\begin{align}
+							Area(Shaded) &= Area(Square) - Area(All Circles)\\
+							Area(Shaded) &= Area(Square) - \left(4\times Area(Circle)\right)\\
+							Area(Shaded) &= (s^2) - \left(4\times \pi r^2\right)\\
+							Area(Shaded) &= (14^2) - \left(4\times \dfrac{22}{7}\times\left(\dfrac{7}{2}\right)^2\right)\\
+							Area(Shaded) &= (14\times 14) - \left(4\times \dfrac{22}{7}\times\dfrac{7}{2}\times\dfrac{7}{2}\right)\\
+							Area(Shaded) &= (14\times 14) - \left(\dfrac{4\times 22\times 7\times 7}{7\times 2\times 2}\right)\\
+							Area(Shaded) &= (14\times 14) - \left(\dfrac{2\times 2\times 22\times 7\times 7}{7\times 2\times
+							2}\right)\\
+							Area(Shaded) &= (14\times 14) - \left(\dfrac{7\times 2\times 7\times 2\times 22}{7\times 2\times
+							2}\right)\\
+							\require{cancel}Area(Shaded) &= (14\times 14) - \left(\dfrac{\cancelto{1}{14}\times 14\times
+							\cancelto{11}{22}}{\cancelto{1}{14}\times \cancelto{1}{2}}\right)\\
+							Area(Shaded) &= \left(14\times 14\right) - \left(14\times 11\right)\\
+							Area(Shaded) &= 14\left(14 - 11\right)\\
+							Area(Shaded) &= 14\left(3\right)\\
+							Area(Shaded) &= 42\text{ cm}^2
+							\end{align}
 							$$
 						</div>
 					</div>
@@ -559,9 +708,190 @@
 					<div id="NC10-MAT21-20220101-S01-Q10" class="qh">#NC10-MAT21-20220101-S01-Q10</div>
 					<div class="q">The area of an equilateral triangle $\Delta\text{ABC}$ is $17320.5 cm^2$. With each vertex of
 						the triangle as centre, a circle is drawn with radius equal to half the length of the side of the triangle.
-						Find the area of the shaded region.<br>(Use $\pi = 3.14$ and $\sqrt{3} = 1.73205$)</div>
+						<div class="svgimg">
+							<svg version="1.1" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+								<g fill="none" stroke="#cccccf" stroke-dasharray="24, 24" stroke-linecap="round" stroke-linejoin="round"
+									stroke-width="8">
+									<ellipse cx="786" cy="753.04" rx="245.54" ry="245.54" />
+									<ellipse cx="540" cy="326.96" rx="245.54" ry="245.54" />
+									<circle cx="294" cy="753.04" r="245.54" />
+								</g>
+								<path
+									d="m417.43 539.26-0.68554 1.1875a245.54 245.54 0 0 1 3.1953 1.8125 245.54 245.54 0 0 1 9.3301 5.8613 245.54 245.54 0 0 1 9.0586 6.2754 245.54 245.54 0 0 1 8.7656 6.6758 245.54 245.54 0 0 1 8.459 7.0625 245.54 245.54 0 0 1 8.1328 7.4336 245.54 245.54 0 0 1 7.793 7.791 245.54 245.54 0 0 1 7.4336 8.1328 245.54 245.54 0 0 1 7.0625 8.459 245.54 245.54 0 0 1 6.6738 8.7676 245.54 245.54 0 0 1 6.2754 9.0566 245.54 245.54 0 0 1 5.8633 9.3301 245.54 245.54 0 0 1 5.4375 9.584 245.54 245.54 0 0 1 5.002 9.8184 245.54 245.54 0 0 1 4.5566 10.033 245.54 245.54 0 0 1 4.1035 10.227 245.54 245.54 0 0 1 3.6387 10.4 245.54 245.54 0 0 1 3.1699 10.553 245.54 245.54 0 0 1 2.6914 10.686 245.54 245.54 0 0 1 2.2109 10.795 245.54 245.54 0 0 1 1.7227 10.883 245.54 245.54 0 0 1 1.2344 10.949 245.54 245.54 0 0 1 0.74219 10.994 245.54 245.54 0 0 1 0.2461 11.018h0.91796a245.54 245.54 0 0 1 2.498-34.945 245.54 245.54 0 0 1 7.4473-34.232 245.54 245.54 0 0 1 12.244-32.824 245.54 245.54 0 0 1 16.789-30.748 245.54 245.54 0 0 1 20.994-28.047 245.54 245.54 0 0 1 24.773-24.771 245.54 245.54 0 0 1 28.045-20.994 245.54 245.54 0 0 1 10.258-5.6016l-0.93554-1.6211a245.54 245.54 0 0 1-8.4629 5.1152 245.54 245.54 0 0 1-27.039 12.17 245.54 245.54 0 0 1-28.309 8.8203 245.54 245.54 0 0 1-29.164 5.3457 245.54 245.54 0 0 1-29.598 1.7891 245.54 245.54 0 0 1-29.598-1.7891 245.54 245.54 0 0 1-29.164-5.3457 245.54 245.54 0 0 1-28.309-8.8203 245.54 245.54 0 0 1-27.039-12.17 245.54 245.54 0 0 1-8.4629-5.1152z"
+									fill="#cfa" stroke="#ddd" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" />
+								<path d="m786 753.04h-492l246-426.08z" fill="none" stroke="#cccccf" stroke-linecap="round"
+									stroke-linejoin="round" stroke-width="8" />
+								<g fill="#f88" stroke="#ddd" stroke-linecap="round" stroke-linejoin="round" stroke-width="8">
+									<path
+										d="m417.43 539.26a245.54 245.54 0 0 0 8.4629 5.1152 245.54 245.54 0 0 0 27.039 12.17 245.54 245.54 0 0 0 28.309 8.8203 245.54 245.54 0 0 0 29.164 5.3457 245.54 245.54 0 0 0 29.598 1.7891 245.54 245.54 0 0 0 29.598-1.7891 245.54 245.54 0 0 0 29.164-5.3457 245.54 245.54 0 0 0 28.309-8.8203 245.54 245.54 0 0 0 27.039-12.17 245.54 245.54 0 0 0 8.4629-5.1152l-122.57-212.3-122.57 212.3z" />
+									<path
+										d="m663.51 540.88a245.54 245.54 0 0 0-10.258 5.6016 245.54 245.54 0 0 0-28.045 20.994 245.54 245.54 0 0 0-24.773 24.771 245.54 245.54 0 0 0-20.994 28.047 245.54 245.54 0 0 0-16.789 30.748 245.54 245.54 0 0 0-12.244 32.824 245.54 245.54 0 0 0-7.4473 34.232 245.54 245.54 0 0 0-2.498 34.945h245.54l-122.49-212.16z" />
+									<path
+										d="m539.54 753.04a245.54 245.54 0 0 0-0.2461-11.018 245.54 245.54 0 0 0-0.74219-10.994 245.54 245.54 0 0 0-1.2344-10.949 245.54 245.54 0 0 0-1.7227-10.883 245.54 245.54 0 0 0-2.2109-10.795 245.54 245.54 0 0 0-2.6914-10.686 245.54 245.54 0 0 0-3.1699-10.553 245.54 245.54 0 0 0-3.6387-10.4 245.54 245.54 0 0 0-4.1035-10.227 245.54 245.54 0 0 0-4.5566-10.033 245.54 245.54 0 0 0-5.002-9.8184 245.54 245.54 0 0 0-5.4375-9.584 245.54 245.54 0 0 0-5.8633-9.3301 245.54 245.54 0 0 0-6.2754-9.0566 245.54 245.54 0 0 0-6.6738-8.7676 245.54 245.54 0 0 0-7.0625-8.459 245.54 245.54 0 0 0-7.4336-8.1328 245.54 245.54 0 0 0-7.793-7.791 245.54 245.54 0 0 0-8.1328-7.4336 245.54 245.54 0 0 0-8.459-7.0625 245.54 245.54 0 0 0-8.7656-6.6758 245.54 245.54 0 0 0-9.0586-6.2754 245.54 245.54 0 0 0-9.3301-5.8613 245.54 245.54 0 0 0-3.1953-1.8125l-122.74 212.6h245.54z" />
+								</g>
+								<g fill="#000000" font-family="'Noto Serif'" font-size="53.333px">
+									<text x="521.46442" y="304.57581" style="line-height:1.25" xml:space="preserve">
+										<tspan x="521.46442" y="304.57581" fill="#cccccc" font-family="'Noto Serif'" font-size="53.333px">A
+										</tspan>
+									</text>
+									<text x="798.04388" y="782.67688" style="line-height:1.25" xml:space="preserve">
+										<tspan x="798.04388" y="782.67688" fill="#cccccc" font-family="'Noto Serif'" font-size="53.333px">C
+										</tspan>
+									</text>
+									<text x="249.03192" y="784.16687" style="line-height:1.25" xml:space="preserve">
+										<tspan x="249.03192" y="784.16687" fill="#cccccc" font-family="'Noto Serif'" font-size="53.333px">B
+										</tspan>
+									</text>
+								</g>
+								<text x="822.79169" y="1060.5487" font-family="'Noto Sans Mono'" font-size="40px"
+									style="line-height:1.25" xml:space="preserve">
+									<tspan x="822.79169" y="1060.5487" fill="#cccccc" font-size="40px">#nuravLabs</tspan>
+								</text>
+							</svg>
+						</div>
+						Find the area of the shaded region (in green).<br>(Use $\pi = 3.14$ and $\sqrt{3} = 1.73205$)
+					</div>
 					<div class="a">
-
+						As area of the equilateral triangle is given, we can calculate its side. If we know its side then we can
+						calculate the radii of the sectors.
+						<div class="mb">
+							$$
+							\begin{align}
+							Area(Equilateral Triangle) &= \dfrac{\sqrt{3}a^2}{4}\\\\
+							17320.5 &=\dfrac{1.73205 a^2}{4}\\\\
+							17320.5 &=\dfrac{1.73205}{4}\times a^2\\\\
+							17320.5 \times \dfrac{4}{1.73205} &= a^2\\\\
+							\dfrac{17320.5\times 4}{1.73205} &= a^2\\\\
+							\dfrac{1.73205\times 10000\times 4}{1.73205} &= a^2\\\\
+							\require{cancel}\dfrac{\cancelto{1}{1.73205}\times 10000\times 4}{\cancelto{1}{1.73205}} &= a^2\\\\
+							\dfrac{10000\times 4}{1} &= a^2\\\\
+							\sqrt{10000\times 4} &= a\\\\
+							\sqrt{10000}\times \sqrt{4} &= a\\\\
+							100\times 2 &= a\\\\
+							\therefore 200\text{ cm} &= a
+							\end{align}
+							$$
+						</div>
+						<div class="svgimg">
+							<svg version="1.1" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+								<defs>
+									<marker id="m10c05aa" overflow="visible" orient="auto">
+										<path transform="scale(.4) rotate(180) translate(10)" d="m0 0 5-5-17.5 5 17.5 5-5-5z"
+											fill="context-stroke" fill-rule="evenodd" stroke="context-stroke" stroke-width="1pt" />
+									</marker>
+									<marker id="m10c05ab" overflow="visible" orient="auto">
+										<path transform="scale(.4) translate(10)" d="m0 0 5-5-17.5 5 17.5 5-5-5z" fill="context-stroke"
+											fill-rule="evenodd" stroke="context-stroke" stroke-width="1pt" />
+									</marker>
+								</defs>
+								<g fill="none" stroke="#333" stroke-dasharray="24, 24" stroke-linecap="round" stroke-linejoin="round"
+									stroke-width="8">
+									<ellipse cx="786" cy="753.04" rx="245.54" ry="245.54" />
+									<ellipse cx="540" cy="326.96" rx="245.54" ry="245.54" />
+									<circle cx="294" cy="753.04" r="245.54" />
+								</g>
+								<path
+									d="m417.43 539.26-0.68554 1.1875a245.54 245.54 0 0 1 3.1953 1.8125 245.54 245.54 0 0 1 9.3301 5.8613 245.54 245.54 0 0 1 9.0586 6.2754 245.54 245.54 0 0 1 8.7656 6.6758 245.54 245.54 0 0 1 8.459 7.0625 245.54 245.54 0 0 1 8.1328 7.4336 245.54 245.54 0 0 1 7.793 7.791 245.54 245.54 0 0 1 7.4336 8.1328 245.54 245.54 0 0 1 7.0625 8.459 245.54 245.54 0 0 1 6.6738 8.7676 245.54 245.54 0 0 1 6.2754 9.0566 245.54 245.54 0 0 1 5.8633 9.3301 245.54 245.54 0 0 1 5.4375 9.584 245.54 245.54 0 0 1 5.002 9.8184 245.54 245.54 0 0 1 4.5566 10.033 245.54 245.54 0 0 1 4.1035 10.227 245.54 245.54 0 0 1 3.6387 10.4 245.54 245.54 0 0 1 3.1699 10.553 245.54 245.54 0 0 1 2.6914 10.686 245.54 245.54 0 0 1 2.2109 10.795 245.54 245.54 0 0 1 1.7227 10.883 245.54 245.54 0 0 1 1.2344 10.949 245.54 245.54 0 0 1 0.74219 10.994 245.54 245.54 0 0 1 0.2461 11.018h0.91796a245.54 245.54 0 0 1 2.498-34.945 245.54 245.54 0 0 1 7.4473-34.232 245.54 245.54 0 0 1 12.244-32.824 245.54 245.54 0 0 1 16.789-30.748 245.54 245.54 0 0 1 20.994-28.047 245.54 245.54 0 0 1 24.773-24.771 245.54 245.54 0 0 1 28.045-20.994 245.54 245.54 0 0 1 10.258-5.6016l-0.93554-1.6211a245.54 245.54 0 0 1-8.4629 5.1152 245.54 245.54 0 0 1-27.039 12.17 245.54 245.54 0 0 1-28.309 8.8203 245.54 245.54 0 0 1-29.164 5.3457 245.54 245.54 0 0 1-29.598 1.7891 245.54 245.54 0 0 1-29.598-1.7891 245.54 245.54 0 0 1-29.164-5.3457 245.54 245.54 0 0 1-28.309-8.8203 245.54 245.54 0 0 1-27.039-12.17 245.54 245.54 0 0 1-8.4629-5.1152z"
+									fill="#cfa" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" />
+								<path d="m786 753.04h-492l246-426.08z" fill="none" stroke="#cccccf" stroke-linecap="round"
+									stroke-linejoin="round" stroke-width="8" />
+								<g fill="#f88" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="8">
+									<path
+										d="m417.43 539.26a245.54 245.54 0 0 0 8.4629 5.1152 245.54 245.54 0 0 0 27.039 12.17 245.54 245.54 0 0 0 28.309 8.8203 245.54 245.54 0 0 0 29.164 5.3457 245.54 245.54 0 0 0 29.598 1.7891 245.54 245.54 0 0 0 29.598-1.7891 245.54 245.54 0 0 0 29.164-5.3457 245.54 245.54 0 0 0 28.309-8.8203 245.54 245.54 0 0 0 27.039-12.17 245.54 245.54 0 0 0 8.4629-5.1152l-122.57-212.3-122.57 212.3z" />
+									<path
+										d="m663.51 540.88a245.54 245.54 0 0 0-10.258 5.6016 245.54 245.54 0 0 0-28.045 20.994 245.54 245.54 0 0 0-24.773 24.771 245.54 245.54 0 0 0-20.994 28.047 245.54 245.54 0 0 0-16.789 30.748 245.54 245.54 0 0 0-12.244 32.824 245.54 245.54 0 0 0-7.4473 34.232 245.54 245.54 0 0 0-2.498 34.945h245.54l-122.49-212.16z" />
+									<path
+										d="m539.54 753.04a245.54 245.54 0 0 0-0.2461-11.018 245.54 245.54 0 0 0-0.74219-10.994 245.54 245.54 0 0 0-1.2344-10.949 245.54 245.54 0 0 0-1.7227-10.883 245.54 245.54 0 0 0-2.2109-10.795 245.54 245.54 0 0 0-2.6914-10.686 245.54 245.54 0 0 0-3.1699-10.553 245.54 245.54 0 0 0-3.6387-10.4 245.54 245.54 0 0 0-4.1035-10.227 245.54 245.54 0 0 0-4.5566-10.033 245.54 245.54 0 0 0-5.002-9.8184 245.54 245.54 0 0 0-5.4375-9.584 245.54 245.54 0 0 0-5.8633-9.3301 245.54 245.54 0 0 0-6.2754-9.0566 245.54 245.54 0 0 0-6.6738-8.7676 245.54 245.54 0 0 0-7.0625-8.459 245.54 245.54 0 0 0-7.4336-8.1328 245.54 245.54 0 0 0-7.793-7.791 245.54 245.54 0 0 0-8.1328-7.4336 245.54 245.54 0 0 0-8.459-7.0625 245.54 245.54 0 0 0-8.7656-6.6758 245.54 245.54 0 0 0-9.0586-6.2754 245.54 245.54 0 0 0-9.3301-5.8613 245.54 245.54 0 0 0-3.1953-1.8125l-122.74 212.6h245.54z" />
+								</g>
+								<g fill="#333333">
+									<g font-family="'Noto Serif'" font-size="53.333px">
+										<text x="521.46442" y="304.57581" style="line-height:1.25" xml:space="preserve">
+											<tspan x="521.46442" y="304.57581" fill="#333333" font-family="'Noto Serif'" font-size="53.333px">
+												A</tspan>
+										</text>
+										<text x="798.04388" y="782.67688" style="line-height:1.25" xml:space="preserve">
+											<tspan x="798.04388" y="782.67688" fill="#333333" font-family="'Noto Serif'" font-size="53.333px">
+												C</tspan>
+										</text>
+										<text x="249.03192" y="784.16687" style="line-height:1.25" xml:space="preserve">
+											<tspan x="249.03192" y="784.16687" fill="#333333" font-family="'Noto Serif'" font-size="53.333px">
+												B</tspan>
+										</text>
+									</g>
+									<text x="822.79169" y="1060.5487" font-family="'Noto Sans Mono'" font-size="40px"
+										style="line-height:1.25" xml:space="preserve">
+										<tspan x="822.79169" y="1060.5487" fill="#333333" font-size="40px">#nuravLabs</tspan>
+									</text>
+								</g>
+								<path d="m294 853.04 492-6.6e-4" fill="none" marker-end="url(#m10c05aa)" marker-start="url(#m10c05ab)"
+									stroke="#333" stroke-width="5" />
+								<path d="m785.5 754.65-202.17-139.35" fill="none" marker-end="url(#m10c05aa)" stroke="#333"
+									stroke-width="5" />
+								<text x="523.54669" y="894.65399" fill="#333333" font-family="'Noto Sans Mono'" font-size="53.333px"
+									style="line-height:1.25" xml:space="preserve">
+									<tspan x="523.54669" y="894.65399" fill="#333333" font-family="'Noto Serif'" font-size="53.333px"
+										font-style="italic">a</tspan>
+								</text>
+								<text transform="rotate(32.755)" x="934.63336" y="193.0107" fill="#333333"
+									font-family="'Noto Sans Mono'" font-size="53.333px" style="line-height:1.25" xml:space="preserve">
+									<tspan x="934.63336" y="193.0107" fill="#333333" font-family="'Noto Serif'" font-size="53.333px"
+										font-style="italic">r</tspan>
+								</text>
+								<path
+									d="m360.17 755.92a69.043 69.043 0 0 0-0.0692-3.098 69.043 69.043 0 0 0-0.2087-3.0914 69.043 69.043 0 0 0-0.34709-3.0788 69.043 69.043 0 0 0-0.48439-3.0601 69.043 69.043 0 0 0-0.62168-3.0354 69.043 69.043 0 0 0-0.7568-3.0046 69.043 69.043 0 0 0-0.89133-2.9673 69.043 69.043 0 0 0-1.0232-2.9245 69.043 69.043 0 0 0-1.1538-2.8756 69.043 69.043 0 0 0-1.2813-2.8212 69.043 69.043 0 0 0-1.4065-2.7608 69.043 69.043 0 0 0-1.529-2.6949 69.043 69.043 0 0 0-1.6487-2.6235 69.043 69.043 0 0 0-1.7646-2.5466 69.043 69.043 0 0 0-1.8766-2.4653 69.043 69.043 0 0 0-1.9859-2.3786 69.043 69.043 0 0 0-2.0902-2.2868 69.043 69.043 0 0 0-2.1913-2.1907 69.043 69.043 0 0 0-2.2868-2.0902 69.043 69.043 0 0 0-2.3786-1.9859 69.043 69.043 0 0 0-2.4648-1.8771 69.043 69.043 0 0 0-2.5472-1.7646 69.043 69.043 0 0 0-2.6235-1.6481 69.043 69.043 0 0 0-0.89848-0.50965l-34.514 59.78z"
+									fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2495" />
+								<text x="351.39786" y="728.8468" fill="#333333" font-family="'Noto Serif'" font-size="53.333px"
+									style="line-height:1.25" xml:space="preserve">
+									<tspan x="351.39786" y="728.8468" fill="#333333" font-family="'Noto Serif'" font-size="53.333px">60°
+									</tspan>
+								</text>
+								<g fill="#ffcccc" font-family="'Noto Serif'" font-size="96px">
+									<text x="513.93597" y="534.46399" style="line-height:1.25" xml:space="preserve">
+										<tspan x="513.93597" y="534.46399" fill="#ffcccc" font-family="'Noto Serif'" font-size="96px">1
+										</tspan>
+									</text>
+									<text x="453.93597" y="734.46399" style="line-height:1.25" xml:space="preserve">
+										<tspan x="453.93597" y="734.46399" fill="#ffcccc" font-family="'Noto Serif'" font-size="96px">3
+										</tspan>
+									</text>
+									<text x="573.93597" y="734.46399" style="line-height:1.25" xml:space="preserve">
+										<tspan x="573.93597" y="734.46399" fill="#ffcccc" font-family="'Noto Serif'" font-size="96px">2
+										</tspan>
+									</text>
+								</g>
+							</svg>
+						</div>
+						Radius of the circle is given to be half of the side of the equilateral triangle.
+						Hence,
+						<div class="mb">
+							$$
+							\begin{align}
+							r &= \dfrac{a}{2}\\
+							r &= \dfrac{200}{2}\\
+							\require{cancel}r &= \dfrac{\cancelto{100}{200}}{\cancelto{1}{2}}\\
+							\therefore r &= 100\text{ cm}
+							\end{align}
+							$$
+						</div>
+						<hr>
+						As the triangle is equilateral, the angle of the sectors will be $60^\circ$
+						<div class="mb">
+							$$
+							\begin{align}
+							Area(Shaded) &= Area(Triangle) - Area(All Sectors)\\
+							Area(Shaded) &= Area(Triangle) - 3 \left(Area(Sector)\right)\\
+							Area(Shaded) &= 17320.5 - 3 \left(\dfrac{\theta}{360^\circ}\times \pi r^2\right)\\
+							&= 17320.5 - 3 \left(\dfrac{60^\circ}{360^\circ}\times 3.14 \times 100^2\right)\\
+							\require{cancel}&= 17320.5 - \left(3 \times \dfrac{\cancelto{1}{60^\circ}}{\cancelto{6}{360^\circ}}\times
+							3.14 \times 100\times 100\right)\\
+							&= 17320.5 - \left(3\times \dfrac{1}{6}\times 3.14 \times 100\times 100\right)\\
+							\require{cancel}&= 17320.5 - \dfrac{\cancelto{1}{3}\times 1 \times 314 \times 100}{\cancelto{2}{6}}\\
+							\require{cancel}&= 17320.5 - \dfrac{ 1 \times \cancelto{157}{314} \times 100}{\cancelto{1}{2}}\\
+							&= 17320.5 - 15700\\
+							\therefore Area(Shaded) &= 1620.5\text{ cm}^2\\
+							\end{align}
+							$$
+						</div>
 					</div>
 					<button class="ansTgl">Toggle Answer</button>
 				</div>
@@ -619,17 +949,17 @@
 					<div class="a">
 						<div class="mb">
 							$$
-								\begin{align}
-									Distance &= \sqrt{\left(x_2-x_1\right)^2+\left(y_2-y_1\right)^2}\\
-									&= \sqrt{\left((-1)-(-5)\right)^2+\left((3)-(7)\right)^2}\\
-									&= \sqrt{\left(-1+5\right)^2+\left(+3-7\right)^2}\\
-									&= \sqrt{\left(4\right)^2+\left(-4\right)^2}\\
-									&= \sqrt{16+16}\\
-									&= \sqrt{32}\\
-									&= \sqrt{16\times 2}\\
-									&= \sqrt{16}\times\sqrt{2}\\
-									\therefore \text{Distance} &= 4\sqrt{2}\text{ units}
-								\end{align}
+							\begin{align}
+							Distance &= \sqrt{\left(x_2-x_1\right)^2+\left(y_2-y_1\right)^2}\\
+							&= \sqrt{\left((-1)-(-5)\right)^2+\left((3)-(7)\right)^2}\\
+							&= \sqrt{\left(-1+5\right)^2+\left(+3-7\right)^2}\\
+							&= \sqrt{\left(4\right)^2+\left(-4\right)^2}\\
+							&= \sqrt{16+16}\\
+							&= \sqrt{32}\\
+							&= \sqrt{16\times 2}\\
+							&= \sqrt{16}\times\sqrt{2}\\
+							\therefore \text{Distance} &= 4\sqrt{2}\text{ units}
+							\end{align}
 							$$
 						</div>
 					</div>
@@ -641,17 +971,17 @@
 					<div class="a">
 						<div class="mb">
 							$$
-								\begin{align}
-									Distance &= \sqrt{\left(x_2-x_1\right)^2+\left(y_2-y_1\right)^2}\\
-									&= \sqrt{\left((4)-(2)\right)^2+\left((1)-(3)\right)^2}\\
-									&= \sqrt{\left(+4-2\right)^2+\left(+1-3\right)^2}\\
-									&= \sqrt{\left(+2\right)^2+\left(-2\right)^2}\\
-									&= \sqrt{4+4}\\
-									&= \sqrt{16}\\
-									&= \sqrt{4\times 2}\\
-									&= \sqrt{4}\times\sqrt{2}\\
-									\therefore \text{Distance} &= 2\sqrt{2}\text{ units}
-								\end{align}
+							\begin{align}
+							Distance &= \sqrt{\left(x_2-x_1\right)^2+\left(y_2-y_1\right)^2}\\
+							&= \sqrt{\left((4)-(2)\right)^2+\left((1)-(3)\right)^2}\\
+							&= \sqrt{\left(+4-2\right)^2+\left(+1-3\right)^2}\\
+							&= \sqrt{\left(+2\right)^2+\left(-2\right)^2}\\
+							&= \sqrt{4+4}\\
+							&= \sqrt{16}\\
+							&= \sqrt{4\times 2}\\
+							&= \sqrt{4}\times\sqrt{2}\\
+							\therefore \text{Distance} &= 2\sqrt{2}\text{ units}
+							\end{align}
 							$$
 						</div>
 					</div>
@@ -665,67 +995,71 @@
 						Let the vertices be $A(5,-2)$, $B(6,4)$ &amp; $C(7,-2)$
 						<div class="mb">
 							$$
-								\begin{align}
-									A(5,-2) &\text{ ; } B(6,4)\\
-									Distance &= \sqrt{\left(x_2-x_1\right)^2+\left(y_2-y_1\right)^2}\\
-									AB &= \sqrt{\left((6)-(5)\right)^2+\left((4)-(-2)\right)^2}\\
-									&= \sqrt{\left(+6-5\right)^2+\left(+4+2\right)^2}\\
-									&= \sqrt{\left(+1\right)^2+\left(+6\right)^2}\\
-									&= \sqrt{1+36}\\
-									\therefore AB &= \sqrt{37}\text{ units}
-								\end{align}
+							\begin{align}
+							A(5,-2) &\text{ ; } B(6,4)\\
+							Distance &= \sqrt{\left(x_2-x_1\right)^2+\left(y_2-y_1\right)^2}\\
+							AB &= \sqrt{\left((6)-(5)\right)^2+\left((4)-(-2)\right)^2}\\
+							&= \sqrt{\left(+6-5\right)^2+\left(+4+2\right)^2}\\
+							&= \sqrt{\left(+1\right)^2+\left(+6\right)^2}\\
+							&= \sqrt{1+36}\\
+							\therefore AB &= \sqrt{37}\text{ units}
+							\end{align}
 							$$
 						</div>
 						<hr>
 						<div class="mb">
 							$$
-								\begin{align}
-									B(6,4) &\text{ ; } C(7,-2)\\
-									Distance &= \sqrt{\left(x_2-x_1\right)^2+\left(y_2-y_1\right)^2}\\
-									AB &= \sqrt{\left((7)-(6)\right)^2+\left((-2)-(4)\right)^2}\\
-									&= \sqrt{\left(+7-6\right)^2+\left(-2-4\right)^2}\\
-									&= \sqrt{\left(+1\right)^2+\left(-6\right)^2}\\
-									&= \sqrt{1+36}\\
-									\therefore AB &= \sqrt{37}\text{ units}
-								\end{align}
+							\begin{align}
+							B(6,4) &\text{ ; } C(7,-2)\\
+							Distance &= \sqrt{\left(x_2-x_1\right)^2+\left(y_2-y_1\right)^2}\\
+							AB &= \sqrt{\left((7)-(6)\right)^2+\left((-2)-(4)\right)^2}\\
+							&= \sqrt{\left(+7-6\right)^2+\left(-2-4\right)^2}\\
+							&= \sqrt{\left(+1\right)^2+\left(-6\right)^2}\\
+							&= \sqrt{1+36}\\
+							\therefore AB &= \sqrt{37}\text{ units}
+							\end{align}
 							$$
 						</div>
 						<hr>
 						<div class="mb">
 							$$
-								\begin{align}
-									C(7,-2) &\text{ ; } A(5,-2)\\
-									Distance &= \sqrt{\left(x_2-x_1\right)^2+\left(y_2-y_1\right)^2}\\
-									AB &= \sqrt{\left((5)-(7)\right)^2+\left((-2)-(-2)\right)^2}\\
-									&= \sqrt{\left(+5-7\right)^2+\left(-2+2\right)^2}\\
-									&= \sqrt{\left(+2\right)^2+\left(0\right)^2}\\
-									&= \sqrt{4+0}\\
-									&= \sqrt{4}\\
-									\therefore AB &= 2\text{ units}
-								\end{align}
+							\begin{align}
+							C(7,-2) &\text{ ; } A(5,-2)\\
+							Distance &= \sqrt{\left(x_2-x_1\right)^2+\left(y_2-y_1\right)^2}\\
+							AB &= \sqrt{\left((5)-(7)\right)^2+\left((-2)-(-2)\right)^2}\\
+							&= \sqrt{\left(+5-7\right)^2+\left(-2+2\right)^2}\\
+							&= \sqrt{\left(+2\right)^2+\left(0\right)^2}\\
+							&= \sqrt{4+0}\\
+							&= \sqrt{4}\\
+							\therefore AB &= 2\text{ units}
+							\end{align}
 							$$
 						</div>
 						<br>
-						As the lengths of the Sides AB &amp; BC are the same, hence the triangle formed by the given vertices is Isosceles.
+						As the lengths of the Sides AB &amp; BC are the same, hence the triangle formed by the given vertices is
+						Isosceles.
 					</div>
 					<button class="ansTgl">Toggle Answer</button>
 				</div>
 				<div class="qc">
 					<div id="NC10-MAT21-20220101-S03-Q09" class="qh">#NC10-MAT21-20220101-S03-Q09</div>
-					<div class="q">Find the coordinates of the point which divides the join of $(-1,7)$ and $(4,-3)$ in the ratio $2:3$.</div>
+					<div class="q">Find the coordinates of the point which divides the join of $(-1,7)$ and $(4,-3)$ in the ratio
+						$2:3$.</div>
 					<div class="a">
-						Let the point be $P(x,y)$; By applying Section  Formula, we get,
+						Let the point be $P(x,y)$; By applying Section Formula, we get,
 						<div class="mb">
 							$$
-								\begin{align}
-									A(-1,7) \text{ ; } &B(4,-3) \text{ ; } 2:3\\
-									P(x,y) &= \left( \dfrac{m_1 x_2 + m_2 x_1}{m_1 + m_2} , \dfrac{m_1 y_2 + m_2 y_1}{m_1 + m_2}\right)\\
-									&= \left( \dfrac{2 (4) + 3 (-1)}{2 + 3} , \dfrac{2 (-3) + 3 (7)}{2 + 3}\right)\\
-									&= \left( \dfrac{8 -3}{5} , \dfrac{-6 + 21}{5}\right)\\
-									&= \left( \dfrac{5}{5} , \dfrac{15}{5}\right)\\
-									\require{cancel}&= \left( \dfrac{\cancelto{1}{5}}{\cancelto{1}{5}} , \dfrac{\cancelto{3}{15}}{\cancelto{1}{5}}\right)\\
-									\therefore P(x,y) &= \left( 1, 3\right)
-								\end{align}
+							\begin{align}
+							A(x_1,y_1) \text{ ; } &B(x_2,y_2) \text{ ; } 2:3\\
+							A(-1,7) \text{ ; } &B(4,-3) \text{ ; } 2:3\\
+							P(x,y) &= \left( \dfrac{m_1 x_2 + m_2 x_1}{m_1 + m_2} , \dfrac{m_1 y_2 + m_2 y_1}{m_1 + m_2}\right)\\
+							&= \left( \dfrac{2 (4) + 3 (-1)}{2 + 3} , \dfrac{2 (-3) + 3 (7)}{2 + 3}\right)\\
+							&= \left( \dfrac{8 -3}{5} , \dfrac{-6 + 21}{5}\right)\\
+							&= \left( \dfrac{5}{5} , \dfrac{15}{5}\right)\\
+							\require{cancel}&= \left( \dfrac{\cancelto{1}{5}}{\cancelto{1}{5}} ,
+							\dfrac{\cancelto{3}{15}}{\cancelto{1}{5}}\right)\\
+							\therefore P(x,y) &= \left( 1, 3\right)
+							\end{align}
 							$$
 						</div>
 						The required point is $P(1,3)$.
@@ -734,37 +1068,40 @@
 				</div>
 				<div class="qc">
 					<div id="NC10-MAT21-20220101-S03-Q10" class="qh">#NC10-MAT21-20220101-S03-Q10</div>
-					<div class="q">Find the ratio in which the line segment joining the points $(-3,10)$ and $(6,-8)$ is divided by $(-1,6)</div>
+					<div class="q">Find the ratio in which the line segment joining the points $(-3,10)$ and $(6,-8)$ is divided
+						by $(-1,6)$</div>
 					<div class="a">
-						
-						Let the point be $P(-1,6)$, divide the line $A(-3,10)$ &amp; $B(6,-8)$;<br>By applying Section  Formula, we get,
+
+						Let the point be $P(-1,6)$, divide the line $A(-3,10)$ &amp; $B(6,-8)$;<br>By applying Section Formula, we
+						get,
 						<div class="mb">
 							$$
-								\begin{align}
-									A(-3,10) \text{ ; } &B(6,-8) \text{ ; } m_1:m_2\\
-									P(x,y) &= \left( \dfrac{m_1 x_2 + m_2 x_1}{m_1 + m_2} , \dfrac{m_1 y_2 + m_2 y_1}{m_1 + m_2}\right)\\
-									P(-1,6) &= \left( \dfrac{m_1 (6) + m_2 (-3)}{m_1 + m_2} , \dfrac{m_1 (-8) + m_2 (10)}{m_1 + m_2}\right)\\
-									P(-1,6) &= \left( \dfrac{6 m_1 -3m_2}{m_1 + m_2} , \dfrac{-8m_1 + 10m_2}{m_1 + m_2}\right)\\
-								\end{align}
+							\begin{align}
+							A(-3,10) \text{ ; } &B(6,-8) \text{ ; } m_1:m_2\\
+							P(x,y) &= \left( \dfrac{m_1 x_2 + m_2 x_1}{m_1 + m_2} , \dfrac{m_1 y_2 + m_2 y_1}{m_1 + m_2}\right)\\
+							P(-1,6) &= \left( \dfrac{m_1 (6) + m_2 (-3)}{m_1 + m_2} , \dfrac{m_1 (-8) + m_2 (10)}{m_1 + m_2}\right)\\
+							P(-1,6) &= \left( \dfrac{6 m_1 -3m_2}{m_1 + m_2} , \dfrac{-8m_1 + 10m_2}{m_1 + m_2}\right)\\
+							\end{align}
 							$$
 						</div>
 						By comparing both sides we get,
 						<div class="mb">
 							$$
-								\begin{align}
-									6 &= \dfrac{-8m_1 + 10m_2}{m_1 + m_2}\\
-									6\times(m_1 + m_2) &= -8m_1 + 10m_2\\
-									6m_1 +6m_2 &= -8m_1 + 10m_2\\
-									6m_1 +8m_1 &=  + 10m_2 - 6m_2\\
-									14m_1 &=  + 4m_2\\
-									14\times m_1 &=  4\times m_2\\
-									\dfrac{m_1}{m_2} &= \dfrac{4}{14}\\
-									\require{cancel}\dfrac{m_1}{m_2} &= \dfrac{\cancelto{2}{4}}{\cancelto{7}{14}}\\
-									\dfrac{m_1}{m_2} &= \dfrac{2}{7}\\
-								\end{align}
+							\begin{align}
+							6 &= \dfrac{-8m_1 + 10m_2}{m_1 + m_2}\\
+							6\times(m_1 + m_2) &= -8m_1 + 10m_2\\
+							6m_1 +6m_2 &= -8m_1 + 10m_2\\
+							6m_1 +8m_1 &= + 10m_2 - 6m_2\\
+							14m_1 &= + 4m_2\\
+							14\times m_1 &= 4\times m_2\\
+							\dfrac{m_1}{m_2} &= \dfrac{4}{14}\\
+							\require{cancel}\dfrac{m_1}{m_2} &= \dfrac{\cancelto{2}{4}}{\cancelto{7}{14}}\\
+							\dfrac{m_1}{m_2} &= \dfrac{2}{7}\\
+							\end{align}
 							$$
 						</div>
-						The point is $P(-1,6)$, divides the line joining the points $A(-3,10)$ &amp; $B(6,-8)$ in the ratio $m_1 : m_2 = 2:7$
+						The point is $P(-1,6)$, divides the line joining the points $A(-3,10)$ &amp; $B(6,-8)$ in the ratio $m_1 :
+						m_2 = 2:7$
 					</div>
 					<button class="ansTgl">Toggle Answer</button>
 				</div>
@@ -776,23 +1113,23 @@
 						Let the points be $A(2,3)$, $B(-1,0)$, $C(2,-4)$
 						<div class="mb">
 							$$
-								\begin{align}
-									\text{Area} &= \dfrac{1}{2} \times \left[ x_1(y_2 - y_3) +x_2(y_3-y_1) +x_3(y_1-y_2)\right]\\
-									\text{Area} &= \dfrac{1}{2} \times \left[ (2)((0) - (-4)) +(-1)((-4)-(3)) +(2)((3)-(0))\right]\\
-									&= \dfrac{1}{2} \times \left[ +2(0 +4) -1 (-4-3) +2(+3-0)\right]\\
-									&= \dfrac{1}{2} \times \left[ +2(+4) -1 (-7) +2(+3)\right]\\
-									&= \dfrac{1}{2} \times \left[ +8 +7 +6\right]\\
-									&= \dfrac{1}{2} \times \left[ 21\right]\\
-									&= \dfrac{1 \times 21}{2}\\
-									&= \dfrac{21}{2}\\
-									\therefore \text{Area} &= 10.5 \text{ unit}^2\\
-								\end{align}
+							\begin{align}
+							\text{Area} &= \dfrac{1}{2} \times \left[ x_1(y_2 - y_3) +x_2(y_3-y_1) +x_3(y_1-y_2)\right]\\
+							\text{Area} &= \dfrac{1}{2} \times \left[ (2)((0) - (-4)) +(-1)((-4)-(3)) +(2)((3)-(0))\right]\\
+							&= \dfrac{1}{2} \times \left[ +2(0 +4) -1 (-4-3) +2(+3-0)\right]\\
+							&= \dfrac{1}{2} \times \left[ +2(+4) -1 (-7) +2(+3)\right]\\
+							&= \dfrac{1}{2} \times \left[ +8 +7 +6\right]\\
+							&= \dfrac{1}{2} \times \left[ 21\right]\\
+							&= \dfrac{1 \times 21}{2}\\
+							&= \dfrac{21}{2}\\
+							\therefore \text{Area} &= 10.5 \text{ unit}^2\\
+							\end{align}
 							$$
 						</div>
 					</div>
 					<button class="ansTgl">Toggle Answer</button>
 				</div>
-				
+
 				<div class="qc">
 					<div id="NC10-MAT21-20220101-S03-Q12" class="qh">#NC10-MAT21-20220101-S03-Q12</div>
 					<div class="q">Find the area of the triangle whose vertices are: $(-5,-1)$, $(3,-5)$, $(5,2)$</div>
@@ -801,19 +1138,19 @@
 						Let the points be $A(-5,-1)$, $B(3,-5)$, $C(5,2)$
 						<div class="mb">
 							$$
-								\begin{align}
-									\text{Area} &= \dfrac{1}{2} \times \left[ x_1(y_2 - y_3) +x_2(y_3-y_1) +x_3(y_1-y_2)\right]\\
-									\text{Area} &= \dfrac{1}{2} \times \left[ (-5)((-5) - (2)) +(3)((2)-(-1)) +(5)((-1)-(-5))\right]\\
-									\text{Area} &= \dfrac{1}{2} \times \left[ -5(-5-2) +3(+2+1) +5(-1+5)\right]\\
-									\text{Area} &= \dfrac{1}{2} \times \left[ -5(-7) +3(+3) +5(+4)\right]\\
-									\text{Area} &= \dfrac{1}{2} \times \left[ +35 +9 +20 \right]\\
-									\text{Area} &= \dfrac{1}{2} \times \left[ 64 \right]\\
-									&= \dfrac{1 \times 64}{2}\\
-									&= \dfrac{64}{2}\\
-									\require{cancel}&= \dfrac{\cancelto{32}{64}}{\cancel{1}{2}}\\
-									&= \dfrac{32}{1}\\
-									\therefore \text{Area} &= 32 \text{ unit}^2\\
-								\end{align}
+							\begin{align}
+							\text{Area} &= \dfrac{1}{2} \times \left[ x_1(y_2 - y_3) +x_2(y_3-y_1) +x_3(y_1-y_2)\right]\\
+							\text{Area} &= \dfrac{1}{2} \times \left[ (-5)((-5) - (2)) +(3)((2)-(-1)) +(5)((-1)-(-5))\right]\\
+							\text{Area} &= \dfrac{1}{2} \times \left[ -5(-5-2) +3(+2+1) +5(-1+5)\right]\\
+							\text{Area} &= \dfrac{1}{2} \times \left[ -5(-7) +3(+3) +5(+4)\right]\\
+							\text{Area} &= \dfrac{1}{2} \times \left[ +35 +9 +20 \right]\\
+							\text{Area} &= \dfrac{1}{2} \times \left[ 64 \right]\\
+							&= \dfrac{1 \times 64}{2}\\
+							&= \dfrac{64}{2}\\
+							\require{cancel}&= \dfrac{\cancelto{32}{64}}{\cancel{1}{2}}\\
+							&= \dfrac{32}{1}\\
+							\therefore \text{Area} &= 32 \text{ unit}^2\\
+							\end{align}
 							$$
 						</div>
 					</div>
@@ -823,30 +1160,31 @@
 					<div id="NC10-MAT21-20220101-S03-Q13" class="qh">#NC10-MAT21-20220101-S03-Q13</div>
 					<div class="q">Find the value of 'k', for which the points $(7,-2)$, $(5,1)$, $(3,k)$ are collinear.</div>
 					<div class="a">
-						As it is given that the points are collinear, the area of triangle formed by the given points must be zero.<br>
+						As it is given that the points are collinear, the area of triangle formed by the given points must be
+						zero.<br>
 						Let the points be, $A(7,-2)$, $B(5,1)$, $C(3,k)$
 						<div class="mb">
 							$$
-								\begin{align}
-									\text{Area} &= \dfrac{1}{2} \times \left[ x_1(y_2 - y_3) +x_2(y_3-y_1) +x_3(y_1-y_2)\right]\\
-									0 &= \dfrac{1}{2} \times \left[ (7)((1) - (k)) +(5)((k)-(-2)) +(3)((-2)-(1))\right]\\
-									0 \times \dfrac{2}{1} &= \left[ 7(1-k) +5(k+2) +3(-2-1)\right]\\
-									0 &= 7(1-k) +5(k+2) +3(-3)\\
-									0 &= 7-7k +5k+10 -9\\
-									+7k -5k &= 7+10 -9\\
-									2k &= 8\\
-									\therefore k &= \dfrac{8}{2}\\
-									\require{cancel} k &= \dfrac{\cancelto{4}{8}}{\cancelto{1}{2}}\\
-									k &= \dfrac{4}{1}\\
-									\therefore k &= 4
-								\end{align}
+							\begin{align}
+							\text{Area} &= \dfrac{1}{2} \times \left[ x_1(y_2 - y_3) +x_2(y_3-y_1) +x_3(y_1-y_2)\right]\\
+							0 &= \dfrac{1}{2} \times \left[ (7)((1) - (k)) +(5)((k)-(-2)) +(3)((-2)-(1))\right]\\
+							0 \times \dfrac{2}{1} &= \left[ 7(1-k) +5(k+2) +3(-2-1)\right]\\
+							0 &= 7(1-k) +5(k+2) +3(-3)\\
+							0 &= 7-7k +5k+10 -9\\
+							+7k -5k &= 7+10 -9\\
+							2k &= 8\\
+							\therefore k &= \dfrac{8}{2}\\
+							\require{cancel} k &= \dfrac{\cancelto{4}{8}}{\cancelto{1}{2}}\\
+							k &= \dfrac{4}{1}\\
+							\therefore k &= 4
+							\end{align}
 							$$
 						</div>
 						Hence the given points are collinear only when $k=4$.
 					</div>
 					<button class="ansTgl">Toggle Answer</button>
 				</div>
-				
+
 			</div>
 		</section>
 		<section>
@@ -1235,24 +1573,24 @@
 					<div id="NC10-MAT21-20220101-S03-Q11" class="qh">#NC10-MAT21-20220101-S03-Q11</div>
 					<div class="q">Show that<br>$\tan{48^\circ}\tan{23^\circ}\tan{42^\circ}\tan{67^\circ} =
 						1$</div>
-						<div class="a">
-							<div class="mb">
-								$$
-								\begin{align}
-								\text{LHS} &= \tan{48^\circ}\tan{23^\circ}\tan{42^\circ}\tan{67^\circ}\\\\
-								&= \tan{48^\circ}\tan{42^\circ}\tan{23^\circ}\tan{67^\circ}\\\\
-								&= \tan{48^\circ}\cot{(90^\circ - 42^\circ)}\tan{23^\circ}\cot{(90^\circ - 67^\circ)}\\\\
-								&= \tan{48^\circ}\cot{48^\circ}\tan{23^\circ}\cot{23^\circ}\\\\
-								&= \tan{48^\circ}\dfrac{1}{\tan{48^\circ}}\tan{23^\circ}\dfrac{1}{\tan{23^\circ}}\\\\
-								\require{cancel}&=
-								\cancelto{1}{\tan{48^\circ}}\times\dfrac{1}{\cancelto{1}{\tan{48^\circ}}}\times\cancelto{1}{\tan{23^\circ}}\times\dfrac{1}{\cancelto{1}{\tan{23^\circ}}}\\\\
-								&= 1\times\dfrac{1}{1}\times1\times\dfrac{1}{1}\\\\
-								&= 1\times 1\times 1\times 1\\\\
-								&= 1
-								\end{align}
-								$$
-							</div>
+					<div class="a">
+						<div class="mb">
+							$$
+							\begin{align}
+							\text{LHS} &= \tan{48^\circ}\tan{23^\circ}\tan{42^\circ}\tan{67^\circ}\\\\
+							&= \tan{48^\circ}\tan{42^\circ}\tan{23^\circ}\tan{67^\circ}\\\\
+							&= \tan{48^\circ}\cot{(90^\circ - 42^\circ)}\tan{23^\circ}\cot{(90^\circ - 67^\circ)}\\\\
+							&= \tan{48^\circ}\cot{48^\circ}\tan{23^\circ}\cot{23^\circ}\\\\
+							&= \tan{48^\circ}\dfrac{1}{\tan{48^\circ}}\tan{23^\circ}\dfrac{1}{\tan{23^\circ}}\\\\
+							\require{cancel}&=
+							\cancelto{1}{\tan{48^\circ}}\times\dfrac{1}{\cancelto{1}{\tan{48^\circ}}}\times\cancelto{1}{\tan{23^\circ}}\times\dfrac{1}{\cancelto{1}{\tan{23^\circ}}}\\\\
+							&= 1\times\dfrac{1}{1}\times1\times\dfrac{1}{1}\\\\
+							&= 1\times 1\times 1\times 1\\\\
+							&= 1
+							\end{align}
+							$$
 						</div>
+					</div>
 					<button class="ansTgl">Toggle Answer</button>
 				</div>
 				<div class="qc">
